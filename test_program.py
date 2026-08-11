@@ -3,7 +3,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 dir_files = [filename.lower() for filename in os.listdir(BASE_DIR)]
 
-files_list = ['program.py', 'readme.md']
+files_list = ['fit_life.py', 'readme.md']
 
 
 def test_program():
@@ -14,7 +14,7 @@ def test_program():
         import program
     except Exception as e:
         assert False, (
-            'Не удалось запустить `program.py`. '
+            'Не удалось запустить `fit_life.py`. '
             'Исправьте в нем ошибки:\n'
             f'{e}'
         )
